@@ -45,7 +45,7 @@ export async function GET() {
         fill="white"
         font-family="Arial, sans-serif"
       >
-        <tspan font-size="32" font-weight="bold"> //add in the stat streak text in a span tag
+        <tspan font-size="32" font-weight="bold"> 
           ${stats.currentStreak}
         </tspan>
 
