@@ -24,18 +24,18 @@ export async function GET() {
  
       <image
         href="${pet.asset}"        
-         x="30"
-        y="90"
-        width="250"
-        height="250"
+        x="60"
+        y="60"
+        width="125"
+        height="125"
       />
       <text
         x="70"
         y="70"
         fill="black"
-        font-size="16"
+        font-size="32"
         font-weight="bold"
-        font-family="Arial, sans-serif"
+        font-family="Chalkduster, fantasy"
       >
         Commit Streak
       </text>
@@ -43,9 +43,9 @@ export async function GET() {
         x="90"
         y="105"
         fill="white"
-        font-family="Arial, sans-serif"
+        font-family="Chalkduster, fantasy"
       >
-        <tspan font-size="32" font-weight="bold"> 
+        <tspan font-size="16" font-weight="bold"> 
           ${stats.currentStreak}
         </tspan>
 
