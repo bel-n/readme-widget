@@ -21,24 +21,13 @@ export async function GET() {
       height="330"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <rect
-        width="100%"
-        height="100%"
-        fill="black"  
-      />
+ 
       <image
         href="${pet.asset}"        
          x="30"
         y="90"
         width="250"
         height="250"
-      />
-      <image
-        href="${ASSETS.messages}"
-        x="33"
-        y="20"
-        width="250"
-        height="110"
       />
       <text
         x="70"
