@@ -26,13 +26,13 @@ export async function GET() {
         href="${pet.asset}"        
         x="60"
         y="60"
-        width="125"
-        height="125"
+        width="250"
+        height="250"
       />
       <text
         x="70"
         y="70"
-        fill="black"
+        fill="purple"
         font-size="32"
         font-weight="bold"
         font-family="Chalkduster, fantasy"
@@ -58,7 +58,7 @@ export async function GET() {
   `;
   return new Response(svg, {
     headers: {
-      "Content-Type": "image/svg+xml", //tells the browser this is an SVG image
+      "Content-Type": "image/svg+xml", 
     },
   });
 }
