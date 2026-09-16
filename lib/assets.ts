@@ -8,6 +8,6 @@ function toBase64(filepath: string) {
 
 export const ASSETS = {
     butterfly: toBase64(path.join(process.cwd(), "public/assets/butterfly.png")),
-    messages : toBase64(path.join(process.cwd(), "public/assets/messages.png")),
+    messages : toBase64(path.join(process.cwd(), "public/assets/message.png")),
 }
 
