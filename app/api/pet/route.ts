@@ -42,7 +42,6 @@ export async function GET() {
   const svg = `
     <svg width="330" height="330" xmlns="http://www.w3.org/2000/svg">
       <image href="${pet.asset}" x="30" y="90" width="250" height="250" />
-      <image href="${ASSETS.messages}" x="33" y="20" width="250" height="110" />
       <text x="70" y="70" fill="black" font-size="16" font-weight="bold" font-family="Arial, sans-serif">
         Commit Streak
       </text>
