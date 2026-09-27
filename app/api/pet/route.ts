@@ -42,24 +42,24 @@ export async function GET() {
   const svg = `
     <svg width="330" height="330" xmlns="http://www.w3.org/2000/svg">
       <image href="${pet.asset}" x="30" y="90" width="250" height="250" />
-      <text x="70" y="70" fill="black" font-size="16" font-weight="bold" font-family="Arial, sans-serif">
+      <text x="70" y="70" fill="#5f23a7" font-size="16" font-weight="bold" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
         Commit Streak
       </text>
 
-      <text
-          x="90"
-          y="105"
-          fill="white"
-          font-family="Arial, sans-serif"
-        >
-          <tspan font-size="32" font-weight="bold">
-            ${stats.currentStreak}
-          </tspan>
+    <text
+      x="90"
+      y="105"
+      fill="#5f23a7"
+      font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    >
+      <tspan font-size="32" font-weight="700">
+        ${stats.currentStreak}
+      </tspan>
 
-          <tspan font-size="16" font-weight="bold">
-            ${stats.currentStreak === 1 ? "Day" : "Days"}
-          </tspan>
-        </text>
+      <tspan font-size="16" font-weight="700">
+        ${stats.currentStreak === 1 ? "Day" : "Days"}
+      </tspan>
+    </text>
 
     </svg>
   `;
