@@ -45,10 +45,22 @@ export async function GET() {
       <text x="70" y="70" fill="black" font-size="16" font-weight="bold" font-family="Arial, sans-serif">
         Commit Streak
       </text>
-      <text x="90" y="105" fill="white" font-family="Arial, sans-serif">
-        <tspan font-size="32" font-weight="bold">${stats.currentStreak}</tspan>
-        <tspan font-size="16" font-weight="bold"> Days</tspan>
-      </text>
+
+      <text
+          x="90"
+          y="105"
+          fill="white"
+          font-family="Arial, sans-serif"
+        >
+          <tspan font-size="32" font-weight="bold">
+            ${stats.currentStreak}
+          </tspan>
+
+          <tspan font-size="16" font-weight="bold">
+            ${stats.currentStreak === 1 ? "Day" : "Days"}
+          </tspan>
+        </text>
+
     </svg>
   `;
   return new Response(svg, {
