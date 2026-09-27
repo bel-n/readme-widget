@@ -1,9 +1,10 @@
 import { ASSETS } from "@/lib/assets";
 
-export function getPetState (commits: number) {
+export function getPetState(commits: number) {
     if (commits > 0) {
-        return{
-            asset: ASSETS.butterfly
+        return {
+            asset: ASSETS.butterfly,
         };
     }
+    return null;
 }
