@@ -10,7 +10,6 @@ export async function GET() {
   if (!pet) {
     const svg = `
       <svg width="330" height="330" xmlns="http://www.w3.org/2000/svg">
-        <rect width="100%" height="100%" fill="black" />
         <text
           x="165"
           y="155"
